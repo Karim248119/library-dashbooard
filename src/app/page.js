@@ -1,4 +1,4 @@
-import Content from "./pages/dashboard/Table";
+"use client";
 import Dashboard from "./pages/dashboard/page";
 
 export default function Home() {
