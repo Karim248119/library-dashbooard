@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { doc, setDoc } from "firebase/firestore";
@@ -98,7 +99,7 @@ export default function Edit({
   };
 
   const handleAddchapters = () => {
-    if ( chapterImg && chapterSrc) {
+    if (chapterImg && chapterSrc) {
       const newBook = {
         name: chapterName,
         img: chapterImg,
@@ -165,7 +166,7 @@ export default function Edit({
 
         <div className="flex flex-col gap-2">
           <Label className="text-gray" htmlFor="chaptersNo">
-           number of chapters
+            number of chapters
           </Label>
           <Input
             id="description"
